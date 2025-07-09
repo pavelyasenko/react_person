@@ -3,7 +3,7 @@ export const Person = ({ person }) => (
     <h2 className="Person__name">My name is {person.name}</h2>
     {person.age ? <p className="Person__age">I am {person.age}</p> : null}
     <p className="Person__partner">
-      {!person.isMarried && !person.partnerNname
+      {!person.isMarried && !person.partnerName
         ? 'I am not married'
         : ` ${person.partnerName} is my ${person.sex === 'm' ? 'wife' : 'husband'}`}
     </p>
